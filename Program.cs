@@ -6,10 +6,14 @@
         {
             Random generator = new Random();
             int diceOne, diceTwo;
+            int minOne, minTwo, minThree, minFour, minFive;
+            int maxOne, maxTwo, maxThree, maxFour, maxFive;
             diceOne = generator.Next(1, 7);
             diceTwo = generator.Next(1, 7);
 
             //1. Random Integers
+
+            Console.WriteLine("Please type down a minimum and maximum number for each range");
 
             //2. Dice Roller
 
