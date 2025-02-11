@@ -37,17 +37,23 @@
             rangeFour = generator.Next(minFour, maxFour);
             rangeFive = generator.Next(minFive, maxFive);
 
-            Console.WriteLine(rangeOne);
-            Console.WriteLine(rangeTwo);
-            Console.WriteLine(rangeThree);
-            Console.WriteLine(rangeFour);
-            Console.WriteLine(rangeFive);
+            Console.Write($"{rangeOne} ");
+            Console.Write($"{rangeTwo} ");
+            Console.Write($"{rangeThree} ");
+            Console.Write($"{rangeFour} ");
+            Console.Write($"{rangeFive}");
+
+            Console.WriteLine();
+            Console.WriteLine();
 
             //2. Dice Roller
 
             Console.WriteLine(diceOne);
             Console.WriteLine(diceTwo);
             Console.WriteLine($"The sum of those two rolls is: {diceOne + diceTwo}");
+
+            Console.WriteLine();
+            Console.WriteLine();
 
             //3. Random Decimal Numbers
         }
