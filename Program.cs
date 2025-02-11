@@ -26,7 +26,6 @@
             }
 
             Console.WriteLine();
-            Console.WriteLine();
 
             //2. Dice Roller
 
@@ -34,7 +33,6 @@
             Console.WriteLine(diceTwo);
             Console.WriteLine($"The sum of those two rolls is: {diceOne + diceTwo}");
 
-            Console.WriteLine();
             Console.WriteLine();
 
             //3. Random Decimal Numbers
@@ -44,7 +42,7 @@
                 rangeTwo = Convert.ToDouble(generator.Next(minOne, maxOne));
                 decimalPart = Math.Round(generator.NextDouble(), 2);
                 rangeTotal = rangeTwo + decimalPart;
-                Console.Write($"{rangeTwo} ");
+                Console.Write($"{rangeTotal} ");
             }
             
 
