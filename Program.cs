@@ -6,42 +6,26 @@
         {
             Random generator = new Random();
             int diceOne, diceTwo;
-            int minOne, minTwo, minThree, minFour, minFive;
-            int maxOne, maxTwo, maxThree, maxFour, maxFive;
-            int rangeOne, rangeTwo, rangeThree, rangeFour, rangeFive;
+            int minOne;
+            int maxOne;
+            int rangeOne; 
             diceOne = generator.Next(1, 7);
             diceTwo = generator.Next(1, 7);
 
             //1. Random Integers
 
+            //I know it's a mess right now, but I can fix it if I figure out how loops work with integers and random number generators
+
             Console.WriteLine("Please type down a minimum and maximum number for each range");
-            Console.WriteLine("Range One:");
             minOne = Convert.ToInt32(Console.ReadLine());
-            maxOne = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Range Two:");
-            minTwo = Convert.ToInt32(Console.ReadLine());
-            maxTwo = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Range Three:");
-            minThree = Convert.ToInt32(Console.ReadLine());
-            maxThree = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Range Four:");
-            minFour = Convert.ToInt32(Console.ReadLine());
-            maxFour = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Range Five:");
-            minFive = Convert.ToInt32(Console.ReadLine());
-            maxFive = Convert.ToInt32(Console.ReadLine());
+            maxOne = Convert.ToInt32(Console.ReadLine()) + 1;
+   
 
             rangeOne = generator.Next(minOne, maxOne);
-            rangeTwo = generator.Next(minTwo, maxTwo);
-            rangeThree = generator.Next(minThree, maxThree);
-            rangeFour = generator.Next(minFour, maxFour);
-            rangeFive = generator.Next(minFive, maxFive);
+
 
             Console.Write($"{rangeOne} ");
-            Console.Write($"{rangeTwo} ");
-            Console.Write($"{rangeThree} ");
-            Console.Write($"{rangeFour} ");
-            Console.Write($"{rangeFive}");
+
 
             Console.WriteLine();
             Console.WriteLine();
@@ -56,6 +40,11 @@
             Console.WriteLine();
 
             //3. Random Decimal Numbers
+
+
+
+
+
         }
     }
 }
