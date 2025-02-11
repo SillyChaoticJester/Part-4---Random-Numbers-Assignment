@@ -6,26 +6,24 @@
         {
             Random generator = new Random();
             int diceOne, diceTwo;
-            int minOne;
-            int maxOne;
-            int rangeOne; 
+            int minOne, maxOne, rangeOne;
+            double rangeTwo, decimalPart, rangeTotal; 
             diceOne = generator.Next(1, 7);
             diceTwo = generator.Next(1, 7);
 
             //1. Random Integers
 
-            //I know it's a mess right now, but I can fix it if I figure out how loops work with integers and random number generators
+            Console.WriteLine("Please type down a minimum and maximum number for a range");
+            Int32.TryParse(Console.ReadLine(), out minOne);
+            Int32.TryParse(Console.ReadLine(), out maxOne);
 
-            Console.WriteLine("Please type down a minimum and maximum number for each range");
-            minOne = Convert.ToInt32(Console.ReadLine());
-            maxOne = Convert.ToInt32(Console.ReadLine()) + 1;
-   
+            maxOne++;
 
-            rangeOne = generator.Next(minOne, maxOne);
-
-
-            Console.Write($"{rangeOne} ");
-
+            for (int i = 1; i <= 5; i++)
+            {
+                rangeOne = generator.Next(minOne, maxOne);
+                Console.Write($"{rangeOne} ");
+            }
 
             Console.WriteLine();
             Console.WriteLine();
@@ -41,7 +39,14 @@
 
             //3. Random Decimal Numbers
 
-
+            for (int j = 1; j <= 3; j++)
+            {
+                rangeTwo = Convert.ToDouble(generator.Next(minOne, maxOne));
+                decimalPart = Math.Round(generator.NextDouble(), 2);
+                rangeTotal = rangeTwo + decimalPart;
+                Console.Write($"{rangeTwo} ");
+            }
+            
 
 
 
